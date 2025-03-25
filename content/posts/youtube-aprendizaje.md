@@ -37,9 +37,10 @@ Sugerencias  y trucos para aprovechar al máximo YouTube como herramienta de apr
    - Instala extensiones de navegador que bloqueen anuncios o mejoren la experiencia de visualización.
    - Utiliza herramientas como Video Speed Controller para un control más preciso de la velocidad.
    - Considera usar aplicaciones de toma de notas que se integren con YouTube.
+   - Prueba la extensión [Language Reactor](https://www.languagereactor.com/) para aprender idiomas ¡es una pasada!
 9. Aprendizaje activo:
    - Pausa el video regularmente para reflexionar sobre lo que has aprendido.
-   - Intenta explicar el concepto con tus propias palabras después de ver un video.
+   - Intenta explicar el concepto con tus propias palabras después de ver un video. Ten siempre una [[herramienta de toma de notas]] abierta
    - Busca formas de aplicar prácticamente lo que has aprendido.
 10. Combina con otros recursos:
  - Usa YouTube junto con libros de texto, artículos o cursos en línea para un aprendizaje más completo.
