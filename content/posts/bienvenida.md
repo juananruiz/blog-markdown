@@ -6,7 +6,7 @@ excerpt: 'Este es mi primer artículo en mi nuevo blog minimalista escrito en Ma
 
 # Bienvenido a mi blog
 
-Soy Juanan Ruiz, un entusiasta de la tecnología y el aprendizaje continuo. Este es un blog minimalista donde puedo escribir artículos usando Markdown. La simplicidad es clave para una buena experiencia de lectura.
+Soy Juanan Ruiz, un entusiasta de la tecnología y el aprendizaje continuo. Este es un blog minimalista donde puedo escribir artículos usando Markdown. La simplicidad es clave para una buena experiencia de lectura. 
 
 ## ¿Por qué Markdown?
 
@@ -26,6 +26,13 @@ También puedes incluir:
 2. Como esta
 
 O enlaces a [otros sitios web](https://example.com).
+
+Y a otras páginas de mi blog:
+- [¿Qué es Vercel?](vercel-que-es)
+- [Aprendizaje con YouTube](youtube-aprendizaje)
+
+Incluso apartados dentro de un artículo del blog:
+- [¿Qué es Vercel?](vercel-que-es#artículos-relacionados)
 
 ```javascript
 // Incluso puedes incluir bloques de código
