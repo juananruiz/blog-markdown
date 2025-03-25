@@ -16,5 +16,8 @@ Vercel es una plataforma de despliegue para sitios web y aplicaciones. Es una de
 4. **Despliegue automático**: Vercel ofrece despliegue automático, lo que significa que los cambios en el código se despliegan automáticamente.
 5. **Costo**: Vercel es un servicio pago, pero ofrece un plan gratuito que es suficiente para la mayoría de los usuarios.
 
+### Templates
+- [Blog Starter Kit](https://vercel.com/templates/next.js/blog-starter-kit)
+
 ## Artículos relacionados
 - [[Netlify-que-es]]
