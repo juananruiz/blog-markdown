@@ -10,8 +10,8 @@ Vercel es una plataforma de despliegue para sitios web y aplicaciones. Es una de
 
 [[Bienvenido a mi blog]]
 [[bienvenida]]
-[[bienvenida]]
-[[¿Qué es Vercel?]]
+[bienvenida]
+[¿Qué es Vercel?]
 
 ## Características principales
 
