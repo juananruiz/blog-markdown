@@ -3,6 +3,7 @@ title: 'YouTube para el aprendizaje'
 date: '2024-03-24'
 excerpt: 'Consejos y trucos para utilizar YouTube como herramienta de aprendizaje'
 ---
+
 Sugerencias  y trucos para aprovechar al máximo YouTube como herramienta de aprendizaje, independientemente del tema de estudio.
 
 1. Optimiza tu búsqueda:

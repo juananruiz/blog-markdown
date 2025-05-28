@@ -50,6 +50,8 @@ blog-minimalista/
 2. Instala las dependencias:
    ```bash
    npm install
+   # si falla prueba con
+   npm install --legacy-peer-deps
    # o
    yarn
    # o
@@ -132,6 +134,10 @@ Este blog está diseñado para ser fácilmente personalizable:
 - Modifica los estilos en `styles/` y `tailwind.config.ts`
 - Actualiza los componentes en `components/`
 - Ajusta la configuración de Next.js en `next.config.mjs`
+
+## Créditos
+La versión inicial del proyecto se hizo con V0.
+
 
 ## Licencia
 
