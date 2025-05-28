@@ -1,7 +1,7 @@
 ---
 title: '¿Qué es Vercel?'
 date: '2024-03-24'
-excerpt: 'Introducción a Vercel: la plataforma de despliegue para sitios web y aplicaciones'
+description: 'Introducción a Vercel: la plataforma de despliegue para sitios web y aplicaciones'
 ---
 
 Vercel es una plataforma de despliegue para sitios web y aplicaciones. Es una de las plataformas de despliegue más populares y es conocida por su facilidad de uso y su integración con otros servicios de desarrollo web.

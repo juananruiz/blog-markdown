@@ -20,7 +20,7 @@ export function generateMetadata({ params }: PostPageProps): Metadata {
 
   return {
     title: post.title,
-    description: post.excerpt,
+    description: post.description,
   }
 }
 

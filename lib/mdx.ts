@@ -11,7 +11,7 @@ export interface Post {
   slug: string
   title: string
   date: string
-  excerpt: string
+  description: string
   content: string
 }
 
@@ -40,7 +40,7 @@ export const getAllPosts = cache(async (): Promise<Post[]> => {
         slug,
         title: data.title || slug,
         date: data.date || new Date().toISOString(),
-        excerpt: data.excerpt || "",
+        description: data.description || "",
         content,
       }
     })
@@ -75,7 +75,7 @@ export const getPostBySlug = cache(async (slug: string): Promise<Post | null> =>
       slug,
       title: data.title || slug,
       date: data.date || new Date().toISOString(),
-      excerpt: data.excerpt || "",
+      description: data.description || "",
       content: contentHtml,
     }
   } catch (error) {

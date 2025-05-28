@@ -15,7 +15,7 @@ export default function Home() {
               <div className="border-l-4 border-primary pl-4 transition-all hover:border-l-8">
                 <h2 className="text-2xl font-semibold mb-2 group-hover:text-primary transition-colors">{post.title}</h2>
                 <div className="text-sm text-muted-foreground mb-3">{formatDate(post.date)}</div>
-                <p className="text-muted-foreground">{post.excerpt}</p>
+                <p className="text-muted-foreground">{post.description}</p>
               </div>
             </Link>
           </article>

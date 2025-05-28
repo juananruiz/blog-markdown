@@ -77,7 +77,7 @@ Para crear un nuevo artículo, simplemente añade un archivo markdown en el dire
 ---
 title: 'Título del artículo'
 date: 'YYYY-MM-DD'
-excerpt: 'Breve descripción del artículo'
+description: 'Breve descripción del artículo'
 ---
 
 # Contenido del artículo

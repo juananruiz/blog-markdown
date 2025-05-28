@@ -9,7 +9,7 @@ export interface Post {
   slug: string
   title: string
   date: string
-  excerpt: string
+  description: string
   contentHtml: string
 }
 
@@ -41,8 +41,8 @@ export function getAllPosts(): Post[] {
         slug,
         title: data.title || slug,
         date: data.date || new Date().toISOString(),
-        excerpt: data.excerpt || "",
-        contentHtml,
+        description: data.description || "",
+        contentHtml: contentHtml.toString(),
       }
     })
 
@@ -69,8 +69,8 @@ export function getPostBySlug(slug: string): Post | null {
       slug,
       title: data.title || slug,
       date: data.date || new Date().toISOString(),
-      excerpt: data.excerpt || "",
-      contentHtml,
+      description: data.description || "",
+      contentHtml: contentHtml.toString(),
     }
   } catch (error) {
     console.error(`Error al obtener el post ${slug}:`, error)
