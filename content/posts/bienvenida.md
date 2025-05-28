@@ -4,8 +4,6 @@ date: '2024-03-24'
 excerpt: 'Este es mi primer artículo en mi nuevo blog minimalista escrito en Markdown.'
 ---
 
-# Bienvenido a mi blog
-
 Soy Juanan Ruiz, un entusiasta de la tecnología y el aprendizaje continuo. Este es un blog minimalista donde puedo escribir artículos usando Markdown. La simplicidad es clave para una buena experiencia de lectura. 
 
 ## ¿Por qué Markdown?
