@@ -24,7 +24,7 @@ Si quieres utilizar algo más digital:
 - Logseq
 - Obsidian
 ### Ver también
-- [Cómo escribir buenos enunciados para la repetición espaciada](buenos-enunciados-repetición-espaciada)
+- [Cómo escribir buenos enunciados para la repetición espaciada](enunciados-repetición-espaciada)
 ### Referencias
 - [Obsidian Spaced Repetition (stephenmwangi.com)](https://www.stephenmwangi.com/obsidian-spaced-repetition/)
 - [Flashcards, vocabulary memorization, and studying games | Quizlet](http://quizlet.com/)
