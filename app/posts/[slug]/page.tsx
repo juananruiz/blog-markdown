@@ -9,8 +9,8 @@ interface PostPageProps {
   }
 }
 
-export function generateMetadata({ params }: PostPageProps): Metadata {
-  const post = getPostBySlug(params.slug)
+export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
+  const post = await getPostBySlug(params.slug)
 
   if (!post) {
     return {
@@ -24,16 +24,16 @@ export function generateMetadata({ params }: PostPageProps): Metadata {
   }
 }
 
-export function generateStaticParams() {
-  const posts = getAllPosts()
+export async function generateStaticParams() {
+  const posts = await getAllPosts()
 
   return posts.map((post) => ({
     slug: post.slug,
   }))
 }
 
-export default function PostPage({ params }: PostPageProps) {
-  const post = getPostBySlug(params.slug)
+export default async function PostPage({ params }: PostPageProps) {
+  const post = await getPostBySlug(params.slug)
 
   if (!post) {
     notFound()

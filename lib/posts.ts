@@ -13,7 +13,7 @@ export interface Post {
   contentHtml: string
 }
 
-export function getAllPosts(): Post[] {
+export async function getAllPosts(): Promise<Post[]> {
   // Asegúrate de que el directorio existe
   if (!fs.existsSync(postsDirectory)) {
     fs.mkdirSync(postsDirectory, { recursive: true })
@@ -50,7 +50,7 @@ export function getAllPosts(): Post[] {
   return allPostsData.sort((a, b) => (a.date > b.date ? -1 : 1))
 }
 
-export function getPostBySlug(slug: string): Post | null {
+export async function getPostBySlug(slug: string): Promise<Post | null> {
   try {
     const fullPath = path.join(postsDirectory, `${slug}.md`)
 

@@ -2,8 +2,8 @@ import { getAllPosts } from "@/lib/posts"
 import Link from "next/link"
 import { formatDate } from "@/lib/utils"
 
-export default function Home() {
-  const posts = getAllPosts()
+export default async function Home() {
+  const posts = await getAllPosts()
 
   return (
     <div className="container max-w-4xl py-10">
