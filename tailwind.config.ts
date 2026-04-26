@@ -20,6 +20,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)", "ui-sans-serif", "system-ui"],
+        heading: ["var(--font-outfit)", "ui-sans-serif", "system-ui"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -77,12 +81,44 @@ const config = {
       typography: {
         DEFAULT: {
           css: {
-            maxWidth: "100%",
-            color: "var(--tw-prose-body)",
+            maxWidth: "65ch",
+            color: "hsl(var(--foreground))",
+            lineHeight: "1.75",
+            fontSize: "1.125rem",
+            h1: {
+              fontFamily: "var(--font-outfit)",
+              fontWeight: "700",
+              letterSpacing: "-0.025em",
+            },
+            h2: {
+              fontFamily: "var(--font-outfit)",
+              fontWeight: "600",
+              letterSpacing: "-0.025em",
+              marginTop: "2.5em",
+            },
+            h3: {
+              fontFamily: "var(--font-outfit)",
+              fontWeight: "600",
+            },
+            "code::before": {
+              content: '""',
+            },
+            "code::after": {
+              content: '""',
+            },
+            code: {
+              fontWeight: "400",
+              backgroundColor: "hsl(var(--muted))",
+              padding: "0.2rem 0.4rem",
+              borderRadius: "0.25rem",
+            },
             a: {
-              color: "var(--tw-prose-links)",
+              color: "hsl(var(--primary))",
+              textDecoration: "underline",
+              textUnderlineOffset: "4px",
+              fontWeight: "500",
               "&:hover": {
-                color: "var(--tw-prose-links-hover)",
+                color: "hsl(var(--primary) / 0.8)",
               },
             },
           },

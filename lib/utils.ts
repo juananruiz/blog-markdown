@@ -6,15 +6,26 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatDate(dateString: string): string {
-  const date = new Date(dateString)
-
-  // Opciones para formatear la fecha
-  const options: Intl.DateTimeFormatOptions = {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
+  try {
+    const date = new Date(dateString)
+    
+    // Opciones para formatear la fecha
+    return date.toLocaleDateString("es-ES", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      timeZone: "UTC" // Force UTC for consistency
+    })
+  } catch (e) {
+    return dateString
   }
+}
 
-  return date.toLocaleDateString("es-ES", options)
+export function toMachineDate(dateString: string): string {
+  try {
+    return new Date(dateString).toISOString().split('T')[0]
+  } catch (e) {
+    return dateString
+  }
 }
 

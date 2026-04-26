@@ -13,6 +13,12 @@ export interface Post {
   contentHtml: string
 }
 
+export interface PostIndex {
+  slug: string
+  title: string
+  date: string
+}
+
 export async function getAllPosts(): Promise<Post[]> {
   // Asegúrate de que el directorio existe
   if (!fs.existsSync(postsDirectory)) {
@@ -78,3 +84,26 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
   }
 }
 
+export async function getPostsIndex(): Promise<PostIndex[]> {
+  if (!fs.existsSync(postsDirectory)) {
+    return []
+  }
+
+  const fileNames = fs.readdirSync(postsDirectory)
+  const postsIndex = fileNames
+    .filter((fileName) => fileName.endsWith(".md"))
+    .map((fileName) => {
+      const slug = fileName.replace(/\.md$/, "")
+      const fullPath = path.join(postsDirectory, fileName)
+      const fileContents = fs.readFileSync(fullPath, "utf8")
+      const { data } = matter(fileContents)
+
+      return {
+        slug,
+        title: data.title || slug,
+        date: data.date || new Date().toISOString(),
+      }
+    })
+
+  return postsIndex.sort((a, b) => (a.date > b.date ? -1 : 1))
+}
